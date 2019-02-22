@@ -35,10 +35,10 @@ public class CollectionTestSuite {
     @Test
     public void testOddNumbersExterminatorEmptyList() {
         OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        ArrayList<Integer> even = new ArrayList<Integer>();
 
-            numbers.clear();
-            System.out.println("Testing list: List is empty " + numbers);
+            even.clear();
+            System.out.println("Testing list: List is empty " + even);
         }
 
     }

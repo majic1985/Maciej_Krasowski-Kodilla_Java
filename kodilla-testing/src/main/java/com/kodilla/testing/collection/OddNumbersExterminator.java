@@ -8,6 +8,7 @@ public class OddNumbersExterminator {
         for(int n = 0; n < numbers.size(); n ++){
             even = numbers.get(n);
             if(even % 2 == 0){
+                System.out.println(even);
             }
         }
     }
