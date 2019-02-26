@@ -21,24 +21,23 @@ public class CollectionTestSuite {
 
     @Test
     public void testOddNumbersExterminatorNormalList() {
-        OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
+        OddNumbersExterminator odd = new OddNumbersExterminator();
         ArrayList<Integer> even = new ArrayList<Integer>();
             Random theGenerator = new Random();
-            for (int n = 0; n < 30; n++) {
-            even.add(theGenerator.nextInt(20));
-            oddNumbersExterminator.exterminate(even);
-            System.out.println("The normal list testing: " + even);
+            for (int n = 0; n < 100; n++) {
+            even.add(theGenerator.nextInt(80));
+            System.out.println("The normal list testing: " + odd.exterminate(even));
         }
-
     }
 
     @Test
     public void testOddNumbersExterminatorEmptyList() {
-        OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
+        OddNumbersExterminator odd = new OddNumbersExterminator();
         ArrayList<Integer> even = new ArrayList<Integer>();
-
-            even.clear();
-            System.out.println("Testing list: List is empty " + even);
-        }
-
+        if (even .isEmpty()){
+            System.out.println("Testing list: Error list is empty" );
+            }else{
+            System.out.println("Testing list: " + odd.exterminate(even));
+            }
+       }
     }
