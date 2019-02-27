@@ -34,10 +34,7 @@ public class CollectionTestSuite {
     public void testOddNumbersExterminatorEmptyList() {
         OddNumbersExterminator odd = new OddNumbersExterminator();
         ArrayList<Integer> even = new ArrayList<Integer>();
-        if (even .isEmpty()){
-            System.out.println("Testing list: Error list is empty" );
-            }else{
-            System.out.println("Testing list: " + odd.exterminate(even));
+        System.out.println("Testing list: " + odd.exterminate(even));
             }
        }
-    }
+
