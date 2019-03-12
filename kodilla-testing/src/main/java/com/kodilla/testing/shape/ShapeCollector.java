@@ -5,20 +5,20 @@ import java.util.ArrayList;
 public class ShapeCollector {
     private ArrayList<String> figure = new ArrayList<>();
     public void addFigure(Shape shape) {
+        figure.add("circle");
 
     }
 
     public void removeFigure(Shape shape) {
-
+        figure.remove("circle");
     }
 
-    public int getFigure(int n) {
-        return 0;
-
-
+    public int getFigure(Shape shape) {
+        figure.get(figure.size());
+        return figure.size() ;
     }
-
-    public void showFigures() {
+    public int getShapeSize() {
+        return figure.size();
 
     }
 }

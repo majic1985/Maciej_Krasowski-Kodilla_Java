@@ -1,7 +1,4 @@
 package com.kodilla.testing.shape;
-import com.kodilla.testing.shape.ShapeCollector;
-import com.kodilla.testing.shape.Circle;
-
 import org.junit.*;
 
 public class ShapeCollectorTestSuite {
@@ -23,59 +20,43 @@ public class ShapeCollectorTestSuite {
         System.out.println("Preparing to execute test #" + testCounter);
     }
 @Test
-    public void testAddFigure() {
+    public void testGetFigure() {
 //Given
-    Shape shape = new Shape("circle");
+    Shape shape = new Circle();
 
-//When
-
-        ShapeCollector.add(shape.getShapeName());
-        String addedFigure = ShapeCollector.getShapeName();
+    ShapeCollector shapeCollector = new ShapeCollector();
+    shapeCollector.addFigure(shape);
 // then
-        addedFigure =ShapeCollector.getShapeName();
-        Assert.assertEquals(shape,addedFigure);
+    int shapeSize = shapeCollector.getShapeSize();
+    Assert.assertEquals(1,shapeSize);
     }
 
     @Test
 
     public void testRemoveFigure() {
-//Given
-        Shape shape = new Shape();
+                                                                                                                                        //Given
+        Shape shape = new Circle();
 
 //When
-        ShapeCollector.remove(shape.getShapeName("circle"));
-        String removedFigure = ShapeCollector.getShapeName;
+        ShapeCollector shapeCollector = new ShapeCollector();
+        shapeCollector.removeFigure(shape);
+// then
+        int shapeSize = shapeCollector.getShapeSize();
+        Assert.assertEquals(0,shapeSize);
 
-//then
-        removedFigure = ShapeCollector.getShapeName();
-        Assert.assertEquals(shape, removedFigure);
     }
 @Test
-    public void testGetFigure() {
+    public void testAddFigure() {
 //Given
-        Shape shape = new Shape();
+    Shape shape = new Circle();
 
 //When
-        ShapeCollector.add(shape.getShapeName());
+    ShapeCollector shapeCollector = new ShapeCollector();
+    shapeCollector.addFigure(shape);
+// then
+    int shapeSize = shapeCollector.getShapeSize();
+    Assert.assertEquals(1,shapeSize);
 
-//Then
-        int result = ShapeCollector.getFigure(1);
-        Assert.assertEquals(shape, result);
-
-    }
-    @Test
-    public void testShowFigures() {
-//given
-        ShapeCollector.add(shape.getShapeName("circle"));
-        ShapeCollector.add(shape.getShapeName("square"));
-        ShapeCollector.add(shape.getShapeName("triangle"));
-//when
-        for (String shape : figuresList{
-           System.out.println(shape);
-
-        }
-//then
-        Assert.assertEquals(ShapeCollector < >, figuresList <>);
     }
 }
 
