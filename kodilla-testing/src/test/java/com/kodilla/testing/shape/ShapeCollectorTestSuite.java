@@ -24,11 +24,12 @@ public class ShapeCollectorTestSuite {
 //Given
     Shape shape = new Circle();
 
-    ShapeCollector shapeCollector = new ShapeCollector();
-    shapeCollector.addFigure(shape);
+//When
+        ShapeCollector shapeCollector = new ShapeCollector();
+        shapeCollector.addFigure(shape);
 // then
-    int shapeSize = shapeCollector.getShapeSize();
-    Assert.assertEquals(1,shapeSize);
+        int shapeSize = shapeCollector.getShapeSize();
+        Assert.assertEquals(1,shapeSize);
     }
 
     @Test
