@@ -18,8 +18,8 @@ public class FirstChallenge {
             FirstChallenge firstChallenge = new FirstChallenge();
             double result = firstChallenge.divide(3.0D, 0.0D);
             System.out.println(result);
-        } catch (ArithmeticException var7) {
-            System.out.println("unable to divide by 0! ..machine says: " + var7);
+        } catch (ArithmeticException e) {
+            System.out.println("unable to divide by 0! ..machine says: " );
         } finally {
             System.out.println("the end.");
 
