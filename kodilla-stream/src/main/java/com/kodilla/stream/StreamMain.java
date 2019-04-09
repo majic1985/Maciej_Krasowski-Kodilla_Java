@@ -1,35 +1,45 @@
 package com.kodilla.stream;
 
-import com.kodilla.stream.beautifier.PoemBeautifier;
-import com.kodilla.stream.iterate.NumbersGenerator;
+import com.kodilla.stream.forumuser.Forum;
+import com.kodilla.stream.forumuser.ForumUser;
+
+import java.io.PrintStream;
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StreamMain {
-    public static void main( String[] args ) {
-      //M7.1
-        System.out.println();
-        String rawPoem = new String("Jedzą, piją, lulki palą,\nTańce, hulanka, swawola;\nLedwie karczmy nie rozwalą,\nCha cha, chi chi, hejza, hola!\n\nTwardowski siadł w końcu stoła.\nPodparł się w boki jak basza;\n\"Hulaj dusza! hulaj!\" - woła,\nŚmieszy, tumani, przestrasza.\n\nŻołnierzowi, co grał zucha,\nWszystkich łaje i potrąca,\nŚwisnął szablą koło ucha,\nJuż z żołnierza masz zająca.");
-        PoemBeautifier poemBeautifier = new PoemBeautifier();
-        poemBeautifier.beautify(rawPoem, ( Str ) -> {
-            System.out.println("-------------------\nLambda expression #1\n");
-            return Str.toUpperCase();
+    public StreamMain() {
+    }
+
+    public static void main(String[] args) {
+        System.out.println("M 7.3");
+        Forum forumDirectory = new Forum();
+        Map<Integer, ForumUser> theResultMapOfForum = (Map)forumDirectory.getList().stream().filter(( user) -> {
+                  return Period.between(user.getUserDOB(), LocalDate.now()).getYears() >= 20;
+        })
+                .filter((user) -> {
+                 return user.getUserPostCount() >= 1;
+        })
+                .filter((user) -> {
+                 return user.getUserSex() == 'M';
+        })
+                .collect(Collectors.toMap(ForumUser::getUserID, (forumUser) -> {
+                 return forumUser;
+        }));
+        System.out.println("# elements: " + theResultMapOfForum.size());
+        Stream var10000 = theResultMapOfForum.entrySet().stream().map(( user) -> {
+            return user.getKey() + ": " + user.getValue();
         });
-        poemBeautifier.beautify(rawPoem, ( Str ) -> {
-            System.out.println("-------------------\nLambda expression #2\n");
-            return Str.substring(110, 200);
-        });
-        poemBeautifier.beautify(rawPoem, ( Str ) -> {
-            System.out.println("-------------------\nLambda expression #3\n");
-            return "ABC   ->>>> " + Str + " <<<<- CBA";
-        });
-        poemBeautifier.beautify(rawPoem, ( Str ) -> {
-            System.out.println("-------------------\nLambda expression #4\n");
-            return Str.replace("Twardowski", "POLITYCZNIE POPRAWNY CZLOWIEK");
-        });
-        //M7.2
-        System.out.println("Using Stream to generate even numbers from 1 to 20");
-        NumbersGenerator.generateEven(20);
+        PrintStream var10001 = System.out;
+        var10000.forEach(var10001::println);
     }
 }
+
+
+
 
 
 
