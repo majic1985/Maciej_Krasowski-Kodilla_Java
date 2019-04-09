@@ -5,7 +5,7 @@ import com.kodilla.stream.iterate.NumbersGenerator;
 
 public class StreamMain {
     public static void main( String[] args ) {
-      //7.1
+      //M7.1
         System.out.println();
         String rawPoem = new String("Jedzą, piją, lulki palą,\nTańce, hulanka, swawola;\nLedwie karczmy nie rozwalą,\nCha cha, chi chi, hejza, hola!\n\nTwardowski siadł w końcu stoła.\nPodparł się w boki jak basza;\n\"Hulaj dusza! hulaj!\" - woła,\nŚmieszy, tumani, przestrasza.\n\nŻołnierzowi, co grał zucha,\nWszystkich łaje i potrąca,\nŚwisnął szablą koło ucha,\nJuż z żołnierza masz zająca.");
         PoemBeautifier poemBeautifier = new PoemBeautifier();
