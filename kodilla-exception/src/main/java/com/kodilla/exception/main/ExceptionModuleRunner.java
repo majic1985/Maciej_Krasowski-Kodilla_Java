@@ -1,24 +1,28 @@
 package com.kodilla.exception.main;
 
-import com.kodilla.exception.com.kodilla.exception.test.ExceptionHandling;
-import com.kodilla.exception.com.kodilla.exception.test.SecondChallenge;
+import com.kodilla.exception.com.kodilla.exception.test.FindFlightMockUp;
+import com.kodilla.exception.com.kodilla.exception.test.Flight;
+import com.kodilla.exception.com.kodilla.exception.test.RouteNotFoundException;
 
 public class ExceptionModuleRunner {
     public ExceptionModuleRunner() {
     }
-
     public static void main(String[] args) {
-        SecondChallenge checkXY = new SecondChallenge();
+        FindFlightMockUp flightStatus = new FindFlightMockUp();
+        Flight londonToNewYork = new Flight("LHR", "JFK");
+        Flight notExistingToAny = new Flight("XXX", "LHR");
 
         try {
-            System.out.println(checkXY.probablyIWillThrowException(2.0D, 1.0D));
-        } catch (Exception e) {
+            flightStatus.findFlight(londonToNewYork);
+        } catch (RouteNotFoundException e) {
+            System.out.println("Incorrect arrival or departure airport");
+        }
 
-            ExceptionHandling printOutTheRule = new ExceptionHandling();
-            printOutTheRule.runExceptionhandling();
-
+        try {
+            flightStatus.findFlight(notExistingToAny);
+        } catch (RouteNotFoundException e) {
+            System.out.println("Incorrect arrival or departure airport");
         }
 
     }
 }
-
