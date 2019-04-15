@@ -3,4 +3,5 @@ include 'kodilla-testing'
 include 'kodilla-stream'
 include 'kodilla-exception'
 include 'rps'
+include 'kodilla-good-patterns'
 
