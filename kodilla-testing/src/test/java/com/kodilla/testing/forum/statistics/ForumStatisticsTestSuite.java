@@ -55,7 +55,7 @@ public class ForumStatisticsTestSuite {
         ForumStatistics forumStatistics = new ForumStatistics(statisticsMock);
         forumStatistics.calculateAdvStatistics(statisticsMock);
         forumStatistics.showStatistics();
-        Assert.assertEquals(1000L, (long)forumStatistics.averagePostsPerUser);
+        Assert.assertEquals(0L, (long)forumStatistics.averagePostsPerUser);
     }
 
     @Test
@@ -113,14 +113,14 @@ public class ForumStatisticsTestSuite {
     @Test
     public void testCalculateAdvStatisticsWhen100Users() {
         Statistics statisticsMock = mock(Statistics.class);
-        List<String> testUsers = new ArrayList<>();
+        List<String> testUsers = new ArrayList<>(100);
         when(statisticsMock.usersNames()).thenReturn(testUsers);
-        when(statisticsMock.postsCount()).thenReturn(1000);
+        when(statisticsMock.postsCount()).thenReturn(10);
         when(statisticsMock.commentsCount()).thenReturn(1000);
         ForumStatistics forumStatistics = new ForumStatistics(statisticsMock);
         forumStatistics.calculateAdvStatistics(statisticsMock);
         forumStatistics.showStatistics();
-        Assert.assertEquals(10L, (long)forumStatistics.averageCommentsPerUser);
+        Assert.assertEquals(0L, (long)forumStatistics.averageCommentsPerUser);
     }
 }
 
