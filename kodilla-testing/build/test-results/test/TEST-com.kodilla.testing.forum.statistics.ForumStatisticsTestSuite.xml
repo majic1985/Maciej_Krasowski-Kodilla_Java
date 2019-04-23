@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-04-23T12:42:13" hostname="DESKTOP-9H1DPLC" time="0.224">
+  <properties/>
+  <testcase name="testCalculateAdvStatisticsWhenMoreCommentsThanPosts" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.205"/>
+  <testcase name="testCalculateAdvStatisticsWhenNoPosts" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.003"/>
+  <testcase name="testCalculateAdvStatisticsWhenNoUsers" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.003"/>
+  <testcase name="testCalculateAdvStatisticsWhen100Users" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.003"/>
+  <testcase name="testCalculateAdvStatisticsWhenNoComments" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.002"/>
+  <testcase name="testCalculateAdvStatisticsWhen1000Posts" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.002"/>
+  <testcase name="testCalculateAdvStatisticsWhenMorePostsThanComments" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.001"/>
+  <system-out><![CDATA[Preparing to execute test #1
+Average number of posts per user: 0
+Average number of comments per user: 0
+Average number of comments per post: 100
+Test Case: end
+-------------------------------------
+Preparing to execute test #2
+Average number of posts per user: 0
+Average number of comments per user: 0
+Average number of comments per post: 0
+Test Case: end
+-------------------------------------
+Preparing to execute test #3
+Average number of posts per user: 0
+Average number of comments per user: 0
+Average number of comments per post: 1
+Test Case: end
+-------------------------------------
+Preparing to execute test #4
+Average number of posts per user: 0
+Average number of comments per user: 0
+Average number of comments per post: 100
+Test Case: end
+-------------------------------------
+Preparing to execute test #5
+Average number of posts per user: 0
+Average number of comments per user: 0
+Average number of comments per post: 0
+Test Case: end
+-------------------------------------
+Preparing to execute test #6
+Average number of posts per user: 0
+Average number of comments per user: 0
+Average number of comments per post: 0
+Test Case: end
+-------------------------------------
+Preparing to execute test #7
+Average number of posts per user: 0
+Average number of comments per user: 0
+Average number of comments per post: 0
+Test Case: end
+-------------------------------------
+All tests are finished.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

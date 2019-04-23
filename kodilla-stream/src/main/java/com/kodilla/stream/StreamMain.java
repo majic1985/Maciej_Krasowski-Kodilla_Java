@@ -30,7 +30,6 @@ public class StreamMain {
         })));
         System.out.println("# elements: " + theResultMapOfForum.size());
         theResultMapOfForum.values().forEach(e -> System.out.println(e) );
-
     }
 }
 
