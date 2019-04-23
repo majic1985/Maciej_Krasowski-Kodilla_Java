@@ -29,7 +29,7 @@ public class StreamMain {
                  return forumUser;
         })));
         System.out.println("# elements: " + theResultMapOfForum.size());
-        System.out.println(theResultMapOfForum.get(user) + ": " + theResultMapOfForum.getValue());
+        theResultMapOfForum.values().forEach(e -> System.out.println(e) );
 
     }
 }

@@ -48,13 +48,13 @@ public class RpsGame {
                 ++roundCount;
                 userInput = commandValidator.validateGameInput(scanner.nextLine(), scanner, userInterface);
                 byte e = -1;
-                switch(userInput.hashCode()) {
-                    case 110:
+                switch(userInput) {
+                    case "n":
                         if (userInput.equals("n")) {
                             e = 1;
                         }
                         break;
-                    case 120:
+                    case "x":
                         if (userInput.equals("x")) {
                             e = 0;
                         }
@@ -83,6 +83,7 @@ public class RpsGame {
             }
 
             return exit;
+
         }
     }
 

@@ -32,28 +32,28 @@ public class CommandValidator {
     public String validateGameInput( String input, Scanner scanner, UserInterface userInterface) {
         while(true) {
             byte e = -1;
-            switch(input.hashCode()) {
-                case 49:
+            switch(input) {
+                case "1":
                     if (input.equals("1")) {
                         e = 0;
                     }
                     break;
-                case 50:
+                case "2":
                     if (input.equals("2")) {
                         e = 1;
                     }
                     break;
-                case 51:
+                case "3":
                     if (input.equals("3")) {
                         e = 2;
                     }
                     break;
-                case 110:
+                case "n":
                     if (input.equals("n")) {
                         e = 4;
                     }
                     break;
-                case 120:
+                case "x":
                     if (input.equals("x")) {
                         e = 3;
                     }
@@ -92,13 +92,13 @@ public class CommandValidator {
     public String validateEndOfGameChoice(String input, Scanner scanner, UserInterface userInterface) {
         while(true) {
             byte e = -1;
-            switch(input.hashCode()) {
-                case 110:
-                    if (input.equals("N")) {
+            switch(input) {
+                case "n":
+                    if (input.equals("n")) {
                         e = 1;
                     }
                     break;
-                case 120:
+                case "x":
                     if (input.equals("x")) {
                         e = 0;
                     }
