@@ -19,8 +19,8 @@ public class ForumUserTestSuite {
     @Test
     public void testGetUserName() {
         ApplicationContext context = new AnnotationConfigApplicationContext(new String[]{"com.kodilla.spring.forum"});
-        User forumUser = (User)context.getBean(ForumUser.class);
-        String userName = forumUser.getUserName();
-        Assert.assertEquals("John Smith", userName);
+        User user = context.getBean(ForumUser.class);
+        String name = user.getUserName();
+        Assert.assertEquals("John Smith", name);
     }
 }
