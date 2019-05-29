@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.singleton.strategy.social.UserTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-05-29T10:06:20" hostname="DESKTOP-9H1DPLC" time="0.012">
+  <properties/>
+  <testcase name="testIndividualSharingStrategies" classname="com.kodilla.patterns.singleton.strategy.social.UserTestSuite" time="0.01"/>
+  <testcase name="testDefaultSharingStrategies" classname="com.kodilla.patterns.singleton.strategy.social.UserTestSuite" time="0.001"/>
+  <system-out><![CDATA[martinLuther likes to share his thoughts now on: Facebook
+johnFitz likes to share his thoughts now on: Twitter
+canIsland likes to share his thoughts now on: Snapchat
+martinLuther likes to share his thoughts on: Twitter
+johnFitz likes to share his thoughts on: Snapchat
+canIsland likes to share his thoughts on: Facebook
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

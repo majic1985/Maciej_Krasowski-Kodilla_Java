@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.singleton.prototype.library.LibraryTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-29T10:06:20" hostname="DESKTOP-9H1DPLC" time="0.014">
+  <properties/>
+  <testcase name="testGetBooks" classname="com.kodilla.patterns.singleton.prototype.library.LibraryTestSuite" time="0.014"/>
+  <system-out><![CDATA[Library 1
+The Book:1, author, 1986-01-01
+The Book:10, author, 1995-10-01
+The Book:8, author, 1993-08-01
+The Book:7, author, 1992-07-01
+The Book:2, author, 1987-02-01
+The Book:4, author, 1989-04-01
+The Book:5, author, 1990-05-01
+The Book:9, author, 1994-09-01
+The Book:3, author, 1988-03-01
+The Book:6, author, 1991-06-01
+Library 2
+The Book:1, author, 1986-01-01
+The Book:10, author, 1995-10-01
+The Book:8, author, 1993-08-01
+The Book:7, author, 1992-07-01
+The Book:2, author, 1987-02-01
+The Book:4, author, 1989-04-01
+The Book:5, author, 1990-05-01
+The Book:9, author, 1994-09-01
+The Book:3, author, 1988-03-01
+The Book:6, author, 1991-06-01
+Library 3
+The Book:1, author, 1986-01-01
+The Book:6, author, 1991-06-01
+Java.Podstawy wyd.X, Helion 2017-10-05
+The Book:4, author, 1989-04-01
+The Book:9, author, 1994-09-01
+The Book:8, author, 1993-08-01
+The Book:7, author, 1992-07-01
+The Book:3, author, 1988-03-01
+The Book:5, author, 1990-05-01
+The Book:10, author, 1995-10-01
+The Book:2, author, 1987-02-01
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

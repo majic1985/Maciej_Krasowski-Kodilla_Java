@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.singleton.factory.ShapeFactoryTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-05-29T10:06:19" hostname="DESKTOP-9H1DPLC" time="0.06">
+  <properties/>
+  <testcase name="testFactoryCircle" classname="com.kodilla.patterns.singleton.factory.ShapeFactoryTestSuite" time="0.036"/>
+  <testcase name="testFactorySquare" classname="com.kodilla.patterns.singleton.factory.ShapeFactoryTestSuite" time="0.003"/>
+  <testcase name="testFactoryRectangle" classname="com.kodilla.patterns.singleton.factory.ShapeFactoryTestSuite" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
