@@ -33,6 +33,6 @@ public class TaskFactoryTestSuite {
         Task painting = taskFactory.createTask("PAINTING");
         painting.executeTask();
         Assert.assertTrue(painting.isTaskExecuted());
-        Assert.assertEquals("Paint the dirty wall", painting.getTaskName());
+        Assert.assertEquals("Paint the freaking dirty wall", painting.getTaskName());
     }
 }

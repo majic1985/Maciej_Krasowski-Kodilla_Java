@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.patterns.singleton.LoggerTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-29T10:06:19" hostname="DESKTOP-9H1DPLC" time="0.066">
+<testsuite name="com.kodilla.patterns.singleton.LoggerTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-29T13:27:33" hostname="DESKTOP-9H1DPLC" time="0.044">
   <properties/>
-  <testcase name="getLastLogTest" classname="com.kodilla.patterns.singleton.LoggerTestSuite" time="0.066"/>
-  <system-out><![CDATA[Log: [2019-05-29T12:06:19.953 The first log]
-Log: [2019-05-29T12:06:19.962 The second log]
-Log: [2019-05-29T12:06:19.962 The last log]
+  <testcase name="getLastLogTest" classname="com.kodilla.patterns.singleton.LoggerTestSuite" time="0.044"/>
+  <system-out><![CDATA[Log: [2019-05-29T15:27:33.600 The first log]
+Log: [2019-05-29T15:27:33.605 The second log]
+Log: [2019-05-29T15:27:33.605 The last log]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

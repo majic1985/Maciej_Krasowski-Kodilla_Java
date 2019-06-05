@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.patterns.singleton.builder.pizza.bigmac.BigMacTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-29T10:06:19" hostname="DESKTOP-9H1DPLC" time="0.049">
+<testsuite name="com.kodilla.patterns.singleton.builder.pizza.bigmac.BigMacTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-29T13:27:33" hostname="DESKTOP-9H1DPLC" time="0.006">
   <properties/>
-  <testcase name="testBigMacBuilder" classname="com.kodilla.patterns.singleton.builder.pizza.bigmac.BigMacTestSuite" time="0.049"/>
+  <testcase name="testBigMacBuilder" classname="com.kodilla.patterns.singleton.builder.pizza.bigmac.BigMacTestSuite" time="0.006"/>
   <system-out><![CDATA[BigMac{bun='Sesame', burgers=2, sauce='Mayonnaise', ingredients=[Lettuce, Onion, Pickle, Cheese, Bacon]}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

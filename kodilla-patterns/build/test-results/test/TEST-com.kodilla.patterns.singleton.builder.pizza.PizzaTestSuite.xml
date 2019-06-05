@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.patterns.singleton.builder.pizza.PizzaTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-29T10:06:19" hostname="DESKTOP-9H1DPLC" time="0.022">
+<testsuite name="com.kodilla.patterns.singleton.builder.pizza.PizzaTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-29T13:27:33" hostname="DESKTOP-9H1DPLC" time="0.003">
   <properties/>
-  <testcase name="testPizzaNew" classname="com.kodilla.patterns.singleton.builder.pizza.PizzaTestSuite" time="0.022"/>
+  <testcase name="testPizzaNew" classname="com.kodilla.patterns.singleton.builder.pizza.PizzaTestSuite" time="0.003"/>
   <system-out><![CDATA[Pizza{bottom='Thin', sauce='Spicy', ingredients=[Onion, Ham, Mushrooms]}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
